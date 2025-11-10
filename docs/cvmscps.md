@@ -13,12 +13,12 @@ hero:
 features:
   - icon: 📱
     title: TikTokers
-    details: Scenepacks of Tiktokers. Ex "5DDIE" & "Vinnie Hacker"
+    details: Scenepacks of Tiktokers. Ex "5DDIE" & "Vinnie Hacker". Also includes their OF if they have one..
     link: /tiktokers
   - icon: ⭐
-    title: Onlyfans
-    details: Scenepacks of OF CREATORS. Ex "Louraint" & "William Seed"
-    link: /onlyfans
+    title: Porn Creators
+    details: Scenepacks of Porn Stars. Ex "William Seed"
+    link: /porn
   - icon: ❔
     title: Others
     details:  Scenepacks of OTHERS. Ex "Random Men"

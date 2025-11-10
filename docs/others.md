@@ -19,6 +19,3 @@ hero:
       text: scenepack req
       link: https://www.instagram.com/p/DPZ6s7cAaHl/
 ---
-## KIERAN WARNER
-Packs - 1080P, 23.976 FPS
-- [MEGA](https://mega.nz/folder/pR1AHKqD#sSymn1EOXNIc9X8g43V0xA)
