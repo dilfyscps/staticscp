@@ -134,39 +134,43 @@ html.light .VPHomeHero .name {
   100% { background-position: -200% center; }
 }
 
-/* Center hero content on all screens */
+/* Center hero content on all screens with smaller vertical spacing */
 .VPHomeHero {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical centering */
-  align-items: center;     /* Horizontal centering */
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
   text-align: center;
-  min-height: calc(100vh - 6rem); /* Full viewport minus nav height */
-  padding-top: 0; /* Remove extra padding from above */
+  min-height: auto; /* remove huge default height */
+  padding: 2rem 1rem; /* smaller top/bottom padding */
+  gap: 1rem; /* spacing between hero elements */
   overflow: visible !important;
 }
 
 /* Center individual elements */
 .VPHomeHero .name,
 .VPHomeHero .text,
-.VPHomeHero .tagline,
-.VPHomeHero .actions {
+.VPHomeHero .tagline {
   margin: 0 auto;
 }
 
 /* Hero buttons layout */
 .VPHomeHero .actions {
   display: flex;
-  flex-direction: row; /* Horizontal on desktop */
+  flex-direction: row; /* horizontal on desktop */
+  justify-content: center; /* center buttons */
   gap: 1rem;
-  flex-wrap: wrap; /* Wrap if screen is too small */
+  flex-wrap: wrap;
 }
 
-/* Make buttons slightly smaller on narrow screens */
+/* Buttons responsive for mobile */
 @media (max-width: 768px) {
   .VPHomeHero .actions {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; /* stack buttons vertically */
+    width: 100%;
+    gap: 0.75rem;
   }
+
   .VPHomeHero .actions .VPButton {
     width: 100%;
     max-width: 240px;
