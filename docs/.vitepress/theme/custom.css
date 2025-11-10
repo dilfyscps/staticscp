@@ -55,17 +55,25 @@
   padding-top: 6rem;
 }
 
-/* Link colors */
-a {
-  color: var(--vp-c-brand-1);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--vp-c-brand-2);
-  text-decoration: underline;
-}
+/* Link colors + remove all underlines */
+a,
 a:visited {
   color: var(--vp-c-brand-1);
+  text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+  color: var(--vp-c-brand-2);
+  text-decoration: none !important;
+}
+
+/* In hero area, make sure no link underline or shadow shows */
+.VPHomeHero a {
+  text-decoration: none !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* Hero shine */
@@ -103,41 +111,3 @@ a:visited {
 .VPHomeHero .tagline { animation-delay: 0.4s; }
 .VPHomeHero .actions { animation-delay: 0.6s; }
 .VPHomeHero .image { animation-delay: 0.8s; }
-
-/* === HERO IMAGE BEHIND TEXT + SCALE 2 === */
-.VPHomeHero {
-  position: relative;
-  overflow: visible !important;
-}
-
-.VPHomeHero .image {
-  position: absolute !important;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2); /* Center + scale up */
-  transform-origin: center center;
-  z-index: 0; /* behind text/buttons */
-  pointer-events: none; /* clickable stuff still works above it */
-  overflow: visible;
-}
-
-.VPHomeHero .image img {
-  width: auto !important;
-  height: auto !important;
-  max-width: none !important;
-  filter: drop-shadow(0 0 40px #00bfff); /* optional glow enhancement */
-}
-
-/* keep text and buttons above */
-.VPHomeHero .text,
-.VPHomeHero .actions {
-  position: relative;
-  z-index: 1;
-}
-
-/* Responsive adjustment for smaller screens */
-@media (max-width: 960px) {
-  .VPHomeHero .image {
-    transform: translate(-50%, -50%) scale(1.4);
-  }
-}
