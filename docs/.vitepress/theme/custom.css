@@ -1,8 +1,9 @@
 /* .vitepress/theme/custom.css */
 
-/* ===== Default (Dark Mode) ===== */
+/* ===== Base Dark Mode ===== */
 :root {
   color-scheme: dark;
+
   --vp-c-bg: #1b1b1b;
   --vp-c-bg-alt: #050505;
   --vp-c-bg-elv: #222;
@@ -24,9 +25,10 @@
   --vp-code-block-color: #ffffff;
 }
 
-/* ===== Light Mode Overrides ===== */
-html.light, :root[data-theme='light'] {
+/* ===== Light Mode ===== */
+html[data-theme='light'] {
   color-scheme: light;
+
   --vp-c-bg: #ffffff;
   --vp-c-bg-alt: #f9f9f9;
   --vp-c-bg-elv: #ffffff;
@@ -48,7 +50,7 @@ html.light, :root[data-theme='light'] {
   --vp-code-block-color: #000000;
 }
 
-/* Transparent nav bar */
+/* ===== Transparent Nav Bar ===== */
 .VPNav {
   background-color: transparent !important;
   backdrop-filter: blur(8px);
@@ -62,7 +64,7 @@ html.light, :root[data-theme='light'] {
   z-index: 10;
 }
 
-/* Nav text readable in both modes */
+/* Nav text readable */
 .VPNav .VPNavBar .title,
 .VPNav .VPNavBarMenu a,
 .VPNav .VPNavBarTitle,
@@ -72,41 +74,23 @@ html.light, :root[data-theme='light'] {
   transition: color 0.3s ease;
 }
 
-/* Push hero content below nav */
+/* ===== Hero Section ===== */
 .VPHomeHero {
-  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;
+  padding: 2rem 1rem;      /* smaller top/bottom padding */
+  gap: 1rem;               /* spacing between elements */
   overflow: visible !important;
 }
 
-/* Remove all underlines */
-a,
-a:visited {
-  color: var(--vp-c-brand-1);
-  text-decoration: none !important;
-}
-a:hover,
-a:focus {
-  color: var(--vp-c-brand-2);
-  text-decoration: none !important;
-}
-
-/* Hero buttons */
-.VPHomeHero .actions .VPButton {
-  background-color: var(--vp-c-brand-1) !important;
-  color: #fff !important;
-  border: none !important;
-  box-shadow: 0 0 20px rgba(35, 180, 228, 0.4);
-  transition: all 0.3s ease;
-}
-html.light .VPHomeHero .actions .VPButton {
-  background-color: var(--vp-c-brand-1) !important;
-  color: #fff !important;
-  box-shadow: 0 0 15px rgba(0, 119, 204, 0.3);
-}
-.VPHomeHero .actions .VPButton:hover {
-  background-color: var(--vp-c-brand-2) !important;
-  box-shadow: 0 0 25px rgba(149, 228, 255, 0.6);
-  transform: translateY(-2px);
+/* Hero text elements */
+.VPHomeHero .name,
+.VPHomeHero .text,
+.VPHomeHero .tagline {
+  margin: 0 auto;
 }
 
 /* Hero name shine */
@@ -120,7 +104,8 @@ html.light .VPHomeHero .actions .VPButton {
   -webkit-text-fill-color: transparent;
   animation: shine 4s linear infinite;
 }
-html.light .VPHomeHero .name {
+
+html[data-theme='light'] .VPHomeHero .name {
   background: linear-gradient(120deg, #0077cc, #33c2ff, #0077cc);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -129,44 +114,52 @@ html.light .VPHomeHero .name {
   animation: shine 4s linear infinite;
 }
 
-@keyframes shine {
-  0% { background-position: 200% center; }
-  100% { background-position: -200% center; }
-}
-
-/* Center hero content on all screens with smaller vertical spacing */
-.VPHomeHero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  text-align: center;
-  min-height: auto; /* remove huge default height */
-  padding: 2rem 1rem; /* smaller top/bottom padding */
-  gap: 1rem; /* spacing between hero elements */
-  overflow: visible !important;
-}
-
-/* Center individual elements */
-.VPHomeHero .name,
-.VPHomeHero .text,
-.VPHomeHero .tagline {
-  margin: 0 auto;
-}
-
-/* Hero buttons layout */
+/* Hero buttons */
 .VPHomeHero .actions {
   display: flex;
-  flex-direction: row; /* horizontal on desktop */
-  justify-content: center; /* center buttons */
+  flex-direction: row;
+  justify-content: center; /* center horizontally on desktop */
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-/* Buttons responsive for mobile */
+.VPHomeHero .actions .VPButton {
+  background-color: var(--vp-c-brand-1) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 0 20px rgba(35, 180, 228, 0.4);
+  transition: all 0.3s ease;
+}
+
+html[data-theme='light'] .VPHomeHero .actions .VPButton {
+  background-color: var(--vp-c-brand-1) !important;
+  color: #fff !important;
+  box-shadow: 0 0 15px rgba(0, 119, 204, 0.3);
+}
+
+.VPHomeHero .actions .VPButton:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  box-shadow: 0 0 25px rgba(149, 228, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ===== Mobile & Responsive ===== */
 @media (max-width: 768px) {
+  /* Stack hero words vertically */
+  .VPHomeHero .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .VPHomeHero .name span {
+    display: block;
+  }
+
+  /* Stack buttons vertically */
   .VPHomeHero .actions {
-    flex-direction: column; /* stack buttons vertically */
+    flex-direction: column;
     width: 100%;
     gap: 0.75rem;
   }
@@ -176,4 +169,22 @@ html.light .VPHomeHero .name {
     max-width: 240px;
     margin: 0 auto;
   }
+}
+
+/* ===== Links ===== */
+a,
+a:visited {
+  color: var(--vp-c-brand-1);
+  text-decoration: none !important;
+}
+a:hover,
+a:focus {
+  color: var(--vp-c-brand-2);
+  text-decoration: none !important;
+}
+
+/* ===== Hero Name Shine Keyframes ===== */
+@keyframes shine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
 }
