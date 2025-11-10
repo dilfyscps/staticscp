@@ -13,7 +13,7 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
 
-  /* Brand colors (adjust to complement white) */
+  /* Brand colors */
   --vp-c-brand-1: #23b4e4;
   --vp-c-brand-2: #95e4ff;
   --vp-c-brand-3: #25addb;
@@ -74,6 +74,21 @@ a:focus {
   border: none !important;
   background: none !important;
   box-shadow: none !important;
+}
+
+/* === Restore Hero Action Button Colors === */
+.VPHomeHero .actions .VPButton {
+  background-color: var(--vp-c-brand-1) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 0 20px rgba(35, 180, 228, 0.4);
+  transition: all 0.3s ease;
+}
+
+.VPHomeHero .actions .VPButton:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  box-shadow: 0 0 30px rgba(149, 228, 255, 0.6);
+  transform: translateY(-2px);
 }
 
 /* Hero shine */
