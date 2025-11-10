@@ -1,17 +1,17 @@
-// .vitepress/theme/index.js
+// docs/.vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import { injectAnalytics } from '@vercel/analytics'
 
 export default {
   ...DefaultTheme,
   setup() {
-    // Call DefaultTheme's setup if it exists
     if (DefaultTheme.setup) DefaultTheme.setup()
 
-    // Inject analytics only on the client
     if (typeof window !== 'undefined') {
-      injectAnalytics()
+      const script = document.createElement('script')
+      script.defer = true
+      script.src = '/_vercel/insights/script.js'
+      document.head.appendChild(script)
     }
   },
 }
