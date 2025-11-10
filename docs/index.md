@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: DILFYSCPS / CVMSCPS
+  name: DILFYSCPS CVMSCPS
   text: 
   tagline: Official Scenepack Directory
   image:
