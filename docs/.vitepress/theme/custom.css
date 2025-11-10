@@ -1,9 +1,9 @@
 /* .vitepress/theme/custom.css */
 :root {
   /* General background colors */
-  --vp-c-bg: #1b1b1b; /* Main background */
-  --vp-c-bg-alt: #050505; /* Alternate background for sections */
-  --vp-c-bg-elv: #ffffff; /* Background for elevated elements like cards */
+  --vp-c-bg: #1b1b1b;
+  --vp-c-bg-alt: #050505;
+  --vp-c-bg-elv: #ffffff;
 
   /* Text colors */
   --vp-c-text-1: #ffffff;
@@ -76,7 +76,7 @@ a:focus {
   box-shadow: none !important;
 }
 
-/* === Restore Hero Action Button Colors === */
+/* Hero action button styling */
 .VPHomeHero .actions .VPButton {
   background-color: var(--vp-c-brand-1) !important;
   color: #fff !important;
@@ -90,7 +90,7 @@ a:focus {
   transform: translateY(-2px);
 }
 
-/* === Hero Shine (animated gradient) === */
+/* === Hero Name Shine === */
 .VPHomeHero .name {
   font-weight: 800;
   color: transparent !important;
@@ -99,33 +99,10 @@ a:focus {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation:
-    shine 4s linear infinite,
-    fadeUp 1.5s ease forwards;
-  opacity: 0;
+  animation: shine 4s linear infinite;
 }
 
 @keyframes shine {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
 }
-
-/* === Fade-up Animation === */
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Apply fade-up to hero elements */
-.VPHomeHero .name,
-.VPHomeHero .text,
-.VPHomeHero .tagline,
-.VPHomeHero .actions,
-.VPHomeHero .image {
-  animation: fadeUp 1.5s ease forwards;
-  opacity: 0;
-}
-.VPHomeHero .text { animation-delay: 0.2s; }
-.VPHomeHero .tagline { animation-delay: 0.4s; }
-.VPHomeHero .actions { animation-delay: 0.6s; }
-.VPHomeHero .image { animation-delay: 0.8s; }
