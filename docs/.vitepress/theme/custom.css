@@ -1,0 +1,33 @@
+    /* .vitepress/theme/custom.css */
+    :root {
+      /* General background colors */
+      --vp-c-bg: #1b1b1b; /* Main background */
+      --vp-c-bg-alt: #050505; /* Alternate background for sections */
+      --vp-c-bg-elv: #ffffff; /* Background for elevated elements like cards */
+
+      /* Text colors */
+      --vp-c-text-1: #ffffff; /* Primary text color */
+      --vp-c-text-2: #ffffff; /* Secondary text color */
+      --vp-c-text-3: #00a0fc; /* Tertiary text color */
+        --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
+      
+
+      /* Brand colors (adjust to complement white) */
+      --vp-c-brand-1: #23b4e4; /* Primary brand color */
+      --vp-c-brand-2: #95e4ff; /* Secondary brand color */
+      --vp-c-brand-3: #25addb; 
+
+      /* Border colors */
+      --vp-c-border: #eeeeee; /* Border color */
+
+      /* Code block colors (adjust for light theme) */
+      --vp-code-block-bg: #f5f5f5;
+      --vp-code-block-color: #000000;
+    }
+
+    /* You may need to adjust specific component styles if needed */
+    .VPNav {
+      background-color: var(--vp-c-bg); /* Ensure nav background is white */
+    }
+   
