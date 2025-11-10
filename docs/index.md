@@ -4,7 +4,7 @@ hero:
   name: DILFYSCPS / CVMSCPS
   text: 
   tagline: Official Scenepack Directory
-  image: https://i.ibb.co/7JBYBfQp/cum-white-splatter-clip-art-clkerm-vector-clip-art-9.png
+  image:
   actions:
     - theme: brand
       text: Affiliates
@@ -14,7 +14,7 @@ hero:
       link: /socials/
       
 features:
-  - icon: ❤︎
+  - icon: 🧔
     title: DILFYSCPS
     details: All Scenepack links.
     link: /dilfyscps

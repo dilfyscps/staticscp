@@ -1,33 +1,143 @@
-    /* .vitepress/theme/custom.css */
-    :root {
-      /* General background colors */
-      --vp-c-bg: #1b1b1b; /* Main background */
-      --vp-c-bg-alt: #050505; /* Alternate background for sections */
-      --vp-c-bg-elv: #ffffff; /* Background for elevated elements like cards */
+/* .vitepress/theme/custom.css */
+:root {
+  /* General background colors */
+  --vp-c-bg: #1b1b1b; /* Main background */
+  --vp-c-bg-alt: #050505; /* Alternate background for sections */
+  --vp-c-bg-elv: #ffffff; /* Background for elevated elements like cards */
 
-      /* Text colors */
-      --vp-c-text-1: #ffffff; /* Primary text color */
-      --vp-c-text-2: #ffffff; /* Secondary text color */
-      --vp-c-text-3: #00a0fc; /* Tertiary text color */
-        --vp-home-hero-name-color: transparent;
+  /* Text colors */
+  --vp-c-text-1: #ffffff; /* Primary text color */
+  --vp-c-text-2: #ffffff; /* Secondary text color */
+  --vp-c-text-3: #00a0fc; /* Tertiary text color */
+
+  --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
-      
 
-      /* Brand colors (adjust to complement white) */
-      --vp-c-brand-1: #23b4e4; /* Primary brand color */
-      --vp-c-brand-2: #95e4ff; /* Secondary brand color */
-      --vp-c-brand-3: #25addb; 
+  /* Brand colors (adjust to complement white) */
+  --vp-c-brand-1: #23b4e4;
+  --vp-c-brand-2: #95e4ff;
+  --vp-c-brand-3: #25addb;
 
-      /* Border colors */
-      --vp-c-border: #eeeeee; /* Border color */
+  /* Border colors */
+  --vp-c-border: #eeeeee;
 
-      /* Code block colors (adjust for light theme) */
-      --vp-code-block-bg: #f5f5f5;
-      --vp-code-block-color: #000000;
-    }
+  /* Code block colors */
+  --vp-code-block-bg: #242424;
+  --vp-code-block-color: #000000;
+}
 
-    /* You may need to adjust specific component styles if needed */
-    .VPNav {
-      background-color: var(--vp-c-bg); /* Ensure nav background is white */
-    }
-   
+/* Transparent nav bar */
+.VPNav {
+  background-color: transparent !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: none;
+  box-shadow: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Keep nav text readable */
+.VPNav .VPNavBar .title,
+.VPNav .VPNavBar .VPNavBarMenu,
+.VPNav .VPNavBar .VPNavBarMenu a,
+.VPNav .VPNavBar .VPNavBarTitle,
+.VPNav .VPNavBarMenuLink {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(0, 160, 252, 0.6);
+}
+
+/* Push hero content below nav */
+.VPHomeHero {
+  padding-top: 6rem;
+}
+
+/* Link colors */
+a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--vp-c-brand-2);
+  text-decoration: underline;
+}
+a:visited {
+  color: var(--vp-c-brand-1);
+}
+
+/* Hero shine */
+.VPHomeHero .name {
+  background: linear-gradient(120deg, #ffffff, #7df0ff, #ffffff);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 4s linear infinite, fadeUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes shine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply fade-up to hero elements */
+.VPHomeHero .name,
+.VPHomeHero .text,
+.VPHomeHero .tagline,
+.VPHomeHero .actions,
+.VPHomeHero .image {
+  animation: fadeUp 1.5s ease forwards;
+  opacity: 0;
+}
+.VPHomeHero .text { animation-delay: 0.2s; }
+.VPHomeHero .tagline { animation-delay: 0.4s; }
+.VPHomeHero .actions { animation-delay: 0.6s; }
+.VPHomeHero .image { animation-delay: 0.8s; }
+
+/* === HERO IMAGE BEHIND TEXT + SCALE 2 === */
+.VPHomeHero {
+  position: relative;
+  overflow: visible !important;
+}
+
+.VPHomeHero .image {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2); /* Center + scale up */
+  transform-origin: center center;
+  z-index: 0; /* behind text/buttons */
+  pointer-events: none; /* clickable stuff still works above it */
+  overflow: visible;
+}
+
+.VPHomeHero .image img {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  filter: drop-shadow(0 0 40px #00bfff); /* optional glow enhancement */
+}
+
+/* keep text and buttons above */
+.VPHomeHero .text,
+.VPHomeHero .actions {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 960px) {
+  .VPHomeHero .image {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}

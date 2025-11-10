@@ -14,13 +14,13 @@ features:
   - icon: 📱
     title: TikTokers
     details: Scenepacks of Tiktokers. Ex "5DDIE" & "Vinnie Hacker"
-    link: /tvshows
+    link: /tiktokers
   - icon: ⭐
     title: Onlyfans
     details: Scenepacks of OF CREATORS. Ex "Louraint" & "William Seed"
-    link: /movies
+    link: /onlyfans
   - icon: ❔
     title: Others
     details:  Scenepacks of OTHERS. Ex "Random Men"
-    link: /trailers
+    link: /others
 ---
