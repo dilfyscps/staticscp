@@ -1,28 +1,49 @@
 /* .vitepress/theme/custom.css */
 :root {
-  /* General background colors */
+  /* ===== DARK MODE (default) ===== */
+  color-scheme: dark;
   --vp-c-bg: #1b1b1b;
   --vp-c-bg-alt: #050505;
-  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-elv: #222222;
 
-  /* Text colors */
   --vp-c-text-1: #ffffff;
-  --vp-c-text-2: #ffffff;
+  --vp-c-text-2: #eaeaea;
   --vp-c-text-3: #00a0fc;
 
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
-
-  /* Brand colors */
   --vp-c-brand-1: #23b4e4;
   --vp-c-brand-2: #95e4ff;
   --vp-c-brand-3: #25addb;
 
-  /* Border colors */
-  --vp-c-border: #eeeeee;
+  --vp-c-border: #2f2f2f;
 
-  /* Code block colors */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
+
   --vp-code-block-bg: #242424;
+  --vp-code-block-color: #ffffff;
+}
+
+/* ===== LIGHT MODE ===== */
+[data-theme='light'] {
+  color-scheme: light;
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f9f9f9;
+  --vp-c-bg-elv: #ffffff;
+
+  --vp-c-text-1: #111111;
+  --vp-c-text-2: #444444;
+  --vp-c-text-3: #23b4e4;
+
+  --vp-c-brand-1: #0077cc;
+  --vp-c-brand-2: #00aaff;
+  --vp-c-brand-3: #33c2ff;
+
+  --vp-c-border: #e0e0e0;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0077cc, #33c2ff, #0077cc);
+
+  --vp-code-block-bg: #f2f2f2;
   --vp-code-block-color: #000000;
 }
 
@@ -46,8 +67,9 @@
 .VPNav .VPNavBar .VPNavBarMenu a,
 .VPNav .VPNavBar .VPNavBarTitle,
 .VPNav .VPNavBarMenuLink {
-  color: #ffffff !important;
-  text-shadow: 0 0 8px rgba(0, 160, 252, 0.6);
+  color: var(--vp-c-text-1) !important;
+  text-shadow: 0 0 8px rgba(0, 160, 252, 0.4);
+  transition: color 0.3s ease;
 }
 
 /* Push hero content below nav */
@@ -84,6 +106,11 @@ a:focus {
   box-shadow: 0 0 20px rgba(35, 180, 228, 0.4);
   transition: all 0.3s ease;
 }
+[data-theme='light'] .VPHomeHero .actions .VPButton {
+  background-color: var(--vp-c-brand-1) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(0, 119, 204, 0.3);
+}
 .VPHomeHero .actions .VPButton:hover {
   background-color: var(--vp-c-brand-2) !important;
   box-shadow: 0 0 30px rgba(149, 228, 255, 0.6);
@@ -95,6 +122,16 @@ a:focus {
   font-weight: 800;
   color: transparent !important;
   background: linear-gradient(120deg, #ffffff, #7df0ff, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+/* Adjust hero shine for light mode */
+[data-theme='light'] .VPHomeHero .name {
+  background: linear-gradient(120deg, #0077cc, #33c2ff, #0077cc);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
