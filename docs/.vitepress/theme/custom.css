@@ -6,9 +6,9 @@
   --vp-c-bg-elv: #ffffff; /* Background for elevated elements like cards */
 
   /* Text colors */
-  --vp-c-text-1: #ffffff; /* Primary text color */
-  --vp-c-text-2: #ffffff; /* Secondary text color */
-  --vp-c-text-3: #00a0fc; /* Tertiary text color */
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #ffffff;
+  --vp-c-text-3: #00a0fc;
 
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffffff, #7df0ff);
@@ -53,22 +53,22 @@
 /* Push hero content below nav */
 .VPHomeHero {
   padding-top: 6rem;
+  overflow: visible !important;
 }
 
-/* Link colors + remove all underlines */
+/* Link colors + remove underlines */
 a,
 a:visited {
   color: var(--vp-c-brand-1);
   text-decoration: none !important;
 }
-
 a:hover,
 a:focus {
   color: var(--vp-c-brand-2);
   text-decoration: none !important;
 }
 
-/* In hero area, make sure no link underline or shadow shows */
+/* Ensure hero links/buttons have no underline */
 .VPHomeHero a {
   text-decoration: none !important;
   border: none !important;
@@ -84,21 +84,24 @@ a:focus {
   box-shadow: 0 0 20px rgba(35, 180, 228, 0.4);
   transition: all 0.3s ease;
 }
-
 .VPHomeHero .actions .VPButton:hover {
   background-color: var(--vp-c-brand-2) !important;
   box-shadow: 0 0 30px rgba(149, 228, 255, 0.6);
   transform: translateY(-2px);
 }
 
-/* Hero shine */
+/* === Hero Shine (animated gradient) === */
 .VPHomeHero .name {
+  font-weight: 800;
+  color: transparent !important;
   background: linear-gradient(120deg, #ffffff, #7df0ff, #ffffff);
   background-size: 200% auto;
-  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: shine 4s linear infinite, fadeUp 1.5s ease forwards;
+  -webkit-text-fill-color: transparent;
+  animation:
+    shine 4s linear infinite,
+    fadeUp 1.5s ease forwards;
   opacity: 0;
 }
 
@@ -107,7 +110,7 @@ a:focus {
   100% { background-position: -200% center; }
 }
 
-/* Fade-up animation */
+/* === Fade-up Animation === */
 @keyframes fadeUp {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
