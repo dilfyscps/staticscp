@@ -188,3 +188,73 @@ a:focus {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
 }
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  background-color: #333e427d;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+/* Poster styles */
+.poster {
+  position: relative;
+  width: 240px;
+  transition: transform 0.25s ease;
+  text-align: center;
+}
+
+.poster:hover {
+  transform: scale(1.06);
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.poster-title {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700; /* bold text */
+  color: #fff;
+  text-align: center;
+}
+
+/* Optional badge on corner */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff9500;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 9999px;
+}
+
+/* 🔧 Responsive fix — stops overflow */
+@media (max-width: 1000px) {
+  .poster-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .poster {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .poster-grid {
+    grid-template-columns: 1fr;
+  }
+  .poster {
+    width: 100%;
+    max-width: 300px;
+  }
+}
