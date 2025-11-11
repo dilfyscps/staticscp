@@ -1,7 +1,7 @@
 ---
 
 layout: home
-
+lastUpdated: true
 
 hero:
   name: "TV SHOW SCENEPACKS"

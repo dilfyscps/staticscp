@@ -3,7 +3,6 @@
 layout: home
 lastUpdated: true
 
-
 hero:
   name: "TIKTOKER SCENEPACKS"
   text: ""

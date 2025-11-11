@@ -1,7 +1,6 @@
 ---
-
 layout: home
-
+lastUpdated: true
 
 hero:
   name: Socials

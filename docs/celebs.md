@@ -1,6 +1,7 @@
 ---
 
 layout: home
+lastUpdated: true
 
 
 hero:
