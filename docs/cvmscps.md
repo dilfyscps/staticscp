@@ -3,7 +3,7 @@ layout: home
 hero:
   name: CVMSCPS
   text: 
-  tagline: 
+  tagline: ᴄᴜʀʀᴇɴᴛʟʏ ᴜᴘᴅᴀᴛɪɴɢ ᴛʜᴇ sᴄᴇɴᴇᴘᴀᴄᴋ ᴘᴀɢᴇs.
   image: 
   actions:
     - theme: alt
