@@ -50,10 +50,10 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: 'EMIQ9A6YTQ',                    // Your Algolia App ID
-        apiKey: 'e0a3ab40da85ea854cce7e3800ad0b3e', // Search-only API key
-        indexName: 'dilfyscps_Algolia_Blog',             // Your index name
-        placeholder: 'Seach scenepacks..',
+      appId: 'Dilfyscps', // your Algolia application ID
+      apiKey: 'EMIQ9A6YTQ', // search-only API key
+      indexName: 'dilfyscps_Algolia_Blog', // the crawler index name
+      placeholder: 'Search scene packs...',
         
       }
     },
