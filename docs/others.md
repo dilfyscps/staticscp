@@ -6,7 +6,7 @@ lastUpdated: true
 hero:
   name: "OTHER SCENEPACKS"
   text: ""
-  tagline:
+  tagline: ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴘʜᴏᴛᴏs ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ sᴄᴇɴᴇᴘᴀᴄᴋs
 
   actions:
     - theme: alt
@@ -19,6 +19,7 @@ hero:
       text: scenepack req
       link: https://www.instagram.com/p/DPZ6s7cAaHl/
 ---
+
 <div class="poster-grid">
   <a class="poster" href="https://mega.nz/folder/1OBRgK6S#PaJEUazBfRZ14Tqmb4L1lQ" target="_blank">
     <img src="/posters/chrisstoner.png" alt="Scenepack Cover" />

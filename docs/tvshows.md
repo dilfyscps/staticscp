@@ -6,7 +6,7 @@ lastUpdated: true
 hero:
   name: "TV SHOW SCENEPACKS"
   text: ""
-  tagline:
+  tagline: ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴘʜᴏᴛᴏs ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ sᴄᴇɴᴇᴘᴀᴄᴋs
 
   actions:
     - theme: alt

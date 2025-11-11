@@ -6,7 +6,7 @@ lastUpdated: true
 hero:
   name: "MOVIE SCENEPACKS"
   text: ""
-  tagline:
+  tagline: ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴘʜᴏᴛᴏs ᴛᴏ ɢᴏ ᴛᴏ ᴛʜᴇ sᴄᴇɴᴇᴘᴀᴄᴋs
 
   actions:
     - theme: alt
