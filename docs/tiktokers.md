@@ -62,6 +62,9 @@ hero:
 ## ChaserDye28
 - [MEGA](https://mega.nz/folder/IKpSiISJ#-oFQQv68aOSqdNi8UKVZvg)
 
+## Cj Clark
+- [MEGA](https://mega.nz/folder/JHwhSCyL#L7o0KuYJVniw0mZqWj-hgw)
+
 ## Darrell Jones
 - [MEGA](https://mega.nz/folder/ZPQExaKI#DsNmBqxUIHcROttCWcjZKA)
 
