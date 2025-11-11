@@ -21,7 +21,7 @@ hero:
 ---
 <div class="poster-grid">
   <a class="poster" href="https://mega.nz/folder/1OBRgK6S#PaJEUazBfRZ14Tqmb4L1lQ" target="_blank">
-    <img src="/posters/chrisstoner.png" alt="Chris Stoner" />
+    <img src="/posters/chrisstoner.png" alt="Scenepack Cover" />
     <p class="poster-title">Chris Stoner</p>
   </a>
 
@@ -40,5 +40,34 @@ hero:
     <p class="poster-title">God Adonis</p>
   </a>
 
+  <a class="poster" href="https://mega.nz/folder/9SwXnJaQ#az_6wuhFglzXgULuoPgr9A" target="_blank">
+    <img src="/posters/ImJustinMac.png" alt="Scenepack Cover"/>
+    <p class="poster-title">ImJustinMac</p>
+  </a>
+
+  <a class="poster" href="https://mega.nz/folder/gPZRERDS#QJDMTPqQpX1eiTJX_XFg7w" target="_blank">
+    <img src="/posters/ivancidrian.png" alt="Scenepack Cover"/>
+    <p class="poster-title">Ivan Cidrian</p>
+  </a>
+
+  <a class="poster" href="https://mega.nz/folder/UK5AECjT#4u9tQICicPeRGkMJc45pFg" target="_blank">
+    <img src="/posters/joshloz.png" alt="Scenepack Cover"/>
+    <p class="poster-title">Josh Loz</p>
+  </a>
+
+  <a class="poster" href="https://mega.nz/folder/5epWDSSK#j4KLUJDRPrI6NmmBoQ0wjA" target="_blank">
+    <img src="/posters/mauro.png" alt="Scenepack Cover"/>
+    <p class="poster-title">Mauro x Andress</p>
+  </a>
+
+  <a class="poster" href="https://mega.nz/folder/5epWDSSK#j4KLUJDRPrI6NmmBoQ0wjA" target="_blank">
+    <img src="/posters/maxednate.png" alt="Scenepack Cover"/>
+    <p class="poster-title">MaxedNate</p>
+  </a>
+
+  <a class="poster" href="https://mega.nz/folder/5epWDSSK#j4KLUJDRPrI6NmmBoQ0wjA" target="_blank">
+    <img src="/posters/popeyoso.png" alt="Scenepack Cover"/>
+    <p class="poster-title">Popeyoso</p>
+  </a>
 
 </div>
