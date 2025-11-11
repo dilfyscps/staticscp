@@ -6,9 +6,6 @@ export default defineConfig({
 
   title: "DILFYSCPS",
   description: "Scenepack Directory",
-head: [
-  ['meta', { name: 'algolia-site-verification', content: 'DB232887532C0F72' }]
-],
 
   themeConfig: {
     sidebar: [
@@ -55,7 +52,9 @@ head: [
       options: {
         appId: 'EMIQ9A6YTQ',                    // Your Algolia App ID
         apiKey: 'e0a3ab40da85ea854cce7e3800ad0b3e', // Search-only API key
-        indexName: 'vitepress_docs'             // Your index name
+        indexName: 'dilfyscps_Algolia_Blog',             // Your index name
+        placeholder: 'Seach scenepacks..',
+        
       }
     },
 
