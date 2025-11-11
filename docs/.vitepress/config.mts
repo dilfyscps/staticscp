@@ -6,12 +6,9 @@ export default defineConfig({
 
   title: "DILFYSCPS",
   description: "Scenepack Directory",
-  head: [
-    ['link', { rel: 'icon', href: 'docs/public/favicon.ico' }],
-
-    // Optional: DocSearch domain verification
-    ['meta', { name: 'docsearch:verification', content: 'YOUR_VERIFICATION_CODE' }]
-  ],
+head: [
+  ['meta', { name: 'algolia-site-verification', content: 'DB232887532C0F72' }]
+],
 
   themeConfig: {
     sidebar: [
