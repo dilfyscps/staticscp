@@ -4,10 +4,15 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   cleanUrls: true,
 
-  
   title: "DILFYSCPS",
   description: "Scenepack Directory",
-  head: [['link', { rel: 'icon', href: 'docs/public/favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: 'docs/public/favicon.ico' }],
+
+    // Optional: DocSearch domain verification
+    ['meta', { name: 'docsearch:verification', content: 'YOUR_VERIFICATION_CODE' }]
+  ],
+
   themeConfig: {
     sidebar: [
       {
@@ -24,7 +29,6 @@ export default defineConfig({
           { text: 'CELEBS', link: '/celebs'},
           { text: 'TRAILERS', link: '/trailers'}
         ]
-        
       },
       {
         text: 'Others',
@@ -34,7 +38,6 @@ export default defineConfig({
           { text: 'FAQ', link: '/faq'},
           { text: 'RULES', link: '/rules'},
         ]
-
       },
       {
         text: 'Socials',
@@ -48,13 +51,19 @@ export default defineConfig({
       }
     ],
     logo: 'https://www.freepnglogos.com/uploads/cum-png/cum-white-splatter-clip-art-clkerm-vector-clip-art-9.png',
+
+    // --- Replace default search with Algolia ---
     search: {
-      provider: 'local'
+      provider: 'algolia',
+      options: {
+        appId: 'EMIQ9A6YTQ',                    // Your Algolia App ID
+        apiKey: 'e0a3ab40da85ea854cce7e3800ad0b3e', // Search-only API key
+        indexName: 'vitepress_docs'             // Your index name
+      }
     },
-    // https://vitepress.dev/reference/default-theme-config
+
     nav: [
       { text: 'Home', link: '/' },
     ],
-
   }
 })

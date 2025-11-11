@@ -1,1 +1,3 @@
-import './theme/custom.css'
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({})

@@ -25,13 +25,11 @@ hero:
   <a class="poster" href="https://mega.nz/folder/1OBRgK6S#PaJEUazBfRZ14Tqmb4L1lQ" target="_blank">
     <img src="/posters/chrisstoner.png" alt="Chris Stoner" />
     <p class="poster-title">Chris Stoner</p>
-    <span class="sr-only">Chris Stoner</span>
   </a>
 
   <a class="poster" href="https://mega.nz/folder/hapmhaxD#9tOzKPQpIUBoRXMy4nn8vA" target="_blank">
     <img src="/posters/cj delco.png" alt="Cj Delco"/>
     <p class="poster-title">Cj Delco</p>
-    <span class="sr-only">Cj Delco</span>
   </a>
 
   <a class="poster" href="https://mega.nz/folder/FfpDDYRB#TlL03DRiMTnSesgjEF0VqQ" target="_blank">
@@ -70,16 +68,18 @@ hero:
     <span class="sr-only">Mauro x Andress</span>
   </a>
 
-  <a class="poster" href="https://mega.nz/folder/pDhD3YZA#yNpydyw9QBavM-ZD__BN0A" target="_blank">
+  <a class="poster" href="https://mega.nz/folder/5epWDSSK#j4KLUJDRPrI6NmmBoQ0wjA" target="_blank">
     <img src="/posters/maxednate.png" alt="MaxedNate"/>
     <p class="poster-title">MaxedNate</p>
     <span class="sr-only">MaxedNate</span>
   </a>
 
-  <a class="poster" href="https://mega.nz/folder/5DoT3bbT#3aStYY-Yx1nvdQnBkHJSWg" target="_blank">
+  <a class="poster" href="https://mega.nz/folder/5epWDSSK#j4KLUJDRPrI6NmmBoQ0wjA" target="_blank">
     <img src="/posters/popeyoso.png" alt="Popeyoso"/>
     <p class="poster-title">Popeyoso</p>
     <span class="sr-only">Popeyoso</span>
   </a>
 
 </div>
+
+
