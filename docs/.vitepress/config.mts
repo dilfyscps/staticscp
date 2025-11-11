@@ -51,7 +51,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
       appId: 'Dilfyscps', // your Algolia application ID
-      apiKey: 'EMIQ9A6YTQ', // search-only API key
+      apiKey: 'e0a3ab40da85ea854cce7e3800ad0b3e', // search-only API key
       indexName: 'dilfyscps_Algolia_Blog', // the crawler index name
       placeholder: 'Search scene packs...',
         
