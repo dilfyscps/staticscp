@@ -1,5 +1,4 @@
 ---
-
 layout: home
 lastUpdated: true
 
@@ -19,6 +18,9 @@ hero:
       text: scenepack req
       link: https://www.instagram.com/p/DPZ6s7cAaHl/
 ---
+
+<PosterSearch />
+
 
 <div class="poster-grid">
 
