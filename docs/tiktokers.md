@@ -62,6 +62,9 @@ hero:
 ## ChaserDye28
 - [MEGA](https://mega.nz/folder/IKpSiISJ#-oFQQv68aOSqdNi8UKVZvg)
 
+## Chris Hatton
+- [MEGA](https://mega.nz/folder/FOQkkAjR#ZnZmoKewyByjWFS5ohlwkw)
+
 ## Cj Clark
 - [MEGA](https://mega.nz/folder/JHwhSCyL#L7o0KuYJVniw0mZqWj-hgw)
 

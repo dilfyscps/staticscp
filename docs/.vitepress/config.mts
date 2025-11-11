@@ -42,7 +42,7 @@ export default defineConfig({
         items: [
           { text: 'DILFYSCPS IG', link: 'https://instagram.com/dilfyscps'},
           { text: 'CVMSCPS IG', link: 'https://instagram.com/cvmscps'},
-          { text: 'DILFYSCPS TIKTOK', link: 'https://tiktok.com/@ktrivae'},
+          { text: 'DILFYSCPS TIKTOK', link: 'https://tiktok.com/@castelloaep'},
           { text: 'CVMSCPS TIKTOK', link: 'https://tiktok.com/@cvmscps'}
         ]
       }
@@ -54,8 +54,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'DILFYSCPS Requests', link: 'https://www.instagram.com/p/DO15P_dkrJT/?utm_source=ig_web_copy_link&igsh=MWxpcmY4bWMyMnJx' },
-      { text: 'CVMSCPS Requests', link: 'https://www.instagram.com/p/DOkcT32DCQN/' }
     ],
 
   }
