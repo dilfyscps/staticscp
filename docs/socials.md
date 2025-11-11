@@ -6,8 +6,7 @@ layout: home
 hero:
   name: Socials
   text: 
-  tagline: 
-  image: https://i.ibb.co/xqGpSLH4/hd-white-outline-round-instagram-logo-icon-png-7017516951188810uvfjvesqu-removebg-preview.png
+  tagline:
 
   actions:
     - theme: alt
